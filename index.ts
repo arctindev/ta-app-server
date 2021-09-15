@@ -1,34 +1,29 @@
 import * as express from 'express';
 import * as cors from 'cors';
+import * as mongoose from 'mongoose';
+import 'dotenv/config';
+import { greetingsRouter } from './src/routes/greetings';
+import { personRouter } from './src/routes/person';
 
 const app = express();
-const DEVELOPMENT = true;
 
 const PORT = process.env.PORT || 5000;
+
 app.use(express.static('build'));
-app.use(express.json());
+app.use(cors());
+app.use('/greetings', greetingsRouter);
+app.use('/person', personRouter);
 
-if(DEVELOPMENT) {
-  app.use(cors());
-}
-
-app.get('/endpoint/hello', (req, res) => {
-  res.status(200).json('Welcome, this is server!');
+app.get('/*', (req, res) => {
+  res.sendFile(__dirname + '/build/index.html');
 });
 
-app.get('/endpoint/*', (req, res) => {
-    res.status(404).json('Error, not found');
-  });
-
-
-app.get('/', (req,res) => {
-    res.sendFile(__dirname + '/build/index.html')
-  })
-  
-app.get('/*', (req,res) => {
-    res.sendFile(__dirname + '/build/404.html')
-  })
-  
+mongoose.connect(`${process.env.DB_CONNECTION}`);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error: '));
+db.once('open', function () {
+  console.log('Connected successfully to the database');
+});
 
 app.listen(PORT, () => {
   console.log(`server runing on port ${PORT}`);

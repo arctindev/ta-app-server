@@ -2,8 +2,7 @@ import * as express from 'express';
 import * as cors from 'cors';
 import * as mongoose from 'mongoose';
 import 'dotenv/config';
-import { greetingsRouter } from './src/routes/greetings';
-import { personRouter } from './src/routes/person';
+import { userDataRouter } from './src/routes/user-data';
 
 const app = express();
 
@@ -11,8 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.static('build'));
 app.use(cors());
-app.use('/greetings', greetingsRouter);
-app.use('/person', personRouter);
+app.use('/user-data', userDataRouter);
 
 app.get('/*', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');

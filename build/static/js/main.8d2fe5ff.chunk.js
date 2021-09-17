@@ -9,7 +9,8 @@
         ListItem: 'ServiceListSuspence_ListItem__HMfET',
         Loader: 'ServiceListSuspence_Loader__333IP',
         ListNameSuspence: 'ServiceListSuspence_ListNameSuspence__1N3z9',
-        ListHourandServiceSuspence: 'ServiceListSuspence_ListHourandServiceSuspence__M2B6G',
+        ListHourandServiceSuspence:
+          'ServiceListSuspence_ListHourandServiceSuspence__M2B6G',
         ListButtonSuspence: 'ServiceListSuspence_ListButtonSuspence__1IjG2',
         'is-dark': 'ServiceListSuspence_is-dark__2ybiK',
       };
@@ -74,7 +75,10 @@
           return Object(r.jsx)('p', {
             className: n
               ? a
-                ? ''.concat(c.a.Label, ' ').concat(c.a[a], ' ').concat(c.a['is-dark'])
+                ? ''
+                    .concat(c.a.Label, ' ')
+                    .concat(c.a[a], ' ')
+                    .concat(c.a['is-dark'])
                 : ''.concat(c.a.Label, ' ').concat(c.a['is-dark'])
               : a
               ? ''.concat(c.a.Label, ' ').concat(c.a[a])
@@ -104,19 +108,34 @@
     ,
     ,
     function (e, t, a) {
-      e.exports = { Template: 'Template_Template__2vFTj', 'is-dark': 'Template_is-dark__24HjY' };
+      e.exports = {
+        Template: 'Template_Template__2vFTj',
+        'is-dark': 'Template_is-dark__24HjY',
+      };
     },
     function (e, t, a) {
-      e.exports = { Header: 'Header_Header__k_lOY', 'is-dark': 'Header_is-dark__wPyrL' };
+      e.exports = {
+        Header: 'Header_Header__k_lOY',
+        'is-dark': 'Header_is-dark__wPyrL',
+      };
     },
     function (e, t, a) {
-      e.exports = { LogoSVG: 'HeaderLogo_LogoSVG__3whte', 'is-dark': 'HeaderLogo_is-dark__280ie' };
+      e.exports = {
+        LogoSVG: 'HeaderLogo_LogoSVG__3whte',
+        'is-dark': 'HeaderLogo_is-dark__280ie',
+      };
     },
     function (e, t, a) {
-      e.exports = { Footer: 'Footer_Footer__2XqyB', 'is-dark': 'Footer_is-dark__PiyIf' };
+      e.exports = {
+        Footer: 'Footer_Footer__2XqyB',
+        'is-dark': 'Footer_is-dark__PiyIf',
+      };
     },
     function (e, t, a) {
-      e.exports = { Title: 'Title_Title__2nx_M', 'is-dark': 'Title_is-dark__MsLHh' };
+      e.exports = {
+        Title: 'Title_Title__2nx_M',
+        'is-dark': 'Title_is-dark__MsLHh',
+      };
     },
     function (e, t, a) {
       e.exports = {
@@ -140,10 +159,16 @@
       };
     },
     function (e, t, a) {
-      e.exports = { Wrapper: 'PageStore_Wrapper__3L2JM', PageTitle: 'PageStore_PageTitle__17T7M' };
+      e.exports = {
+        Wrapper: 'PageStore_Wrapper__3L2JM',
+        PageTitle: 'PageStore_PageTitle__17T7M',
+      };
     },
     function (e, t, a) {
-      e.exports = { Wrapper: 'PageHistoryItem_Wrapper__UP7Fb', PageTitle: 'PageHistoryItem_PageTitle__1eVtL' };
+      e.exports = {
+        Wrapper: 'PageHistoryItem_Wrapper__UP7Fb',
+        PageTitle: 'PageHistoryItem_PageTitle__1eVtL',
+      };
     },
     ,
     ,
@@ -195,7 +220,8 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = arguments[t];
-              for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+              for (var n in a)
+                Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
             }
             return e;
           }).apply(this, arguments);
@@ -210,13 +236,17 @@
               n,
               c = {},
               i = Object.keys(e);
-            for (n = 0; n < i.length; n++) (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
+            for (n = 0; n < i.length; n++)
+              (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
             return c;
           })(e, t);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           for (n = 0; n < i.length; n++)
-            (a = i[n]), t.indexOf(a) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, a) && (c[a] = e[a]));
+            (a = i[n]),
+              t.indexOf(a) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, a) &&
+                  (c[a] = e[a]));
         }
         return c;
       }
@@ -255,7 +285,8 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = arguments[t];
-              for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+              for (var n in a)
+                Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
             }
             return e;
           }).apply(this, arguments);
@@ -270,13 +301,17 @@
               n,
               c = {},
               i = Object.keys(e);
-            for (n = 0; n < i.length; n++) (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
+            for (n = 0; n < i.length; n++)
+              (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
             return c;
           })(e, t);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           for (n = 0; n < i.length; n++)
-            (a = i[n]), t.indexOf(a) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, a) && (c[a] = e[a]));
+            (a = i[n]),
+              t.indexOf(a) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, a) &&
+                  (c[a] = e[a]));
         }
         return c;
       }
@@ -316,7 +351,8 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = arguments[t];
-              for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+              for (var n in a)
+                Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
             }
             return e;
           }).apply(this, arguments);
@@ -331,13 +367,17 @@
               n,
               c = {},
               i = Object.keys(e);
-            for (n = 0; n < i.length; n++) (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
+            for (n = 0; n < i.length; n++)
+              (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
             return c;
           })(e, t);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           for (n = 0; n < i.length; n++)
-            (a = i[n]), t.indexOf(a) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, a) && (c[a] = e[a]));
+            (a = i[n]),
+              t.indexOf(a) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, a) &&
+                  (c[a] = e[a]));
         }
         return c;
       }
@@ -377,7 +417,8 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = arguments[t];
-              for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+              for (var n in a)
+                Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
             }
             return e;
           }).apply(this, arguments);
@@ -392,13 +433,17 @@
               n,
               c = {},
               i = Object.keys(e);
-            for (n = 0; n < i.length; n++) (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
+            for (n = 0; n < i.length; n++)
+              (a = i[n]), t.indexOf(a) >= 0 || (c[a] = e[a]);
             return c;
           })(e, t);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           for (n = 0; n < i.length; n++)
-            (a = i[n]), t.indexOf(a) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, a) && (c[a] = e[a]));
+            (a = i[n]),
+              t.indexOf(a) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, a) &&
+                  (c[a] = e[a]));
         }
         return c;
       }
@@ -434,7 +479,8 @@
         W = a(27),
         E = a(2),
         Z = !1;
-      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
         ? ((Z = !0), console.log('User prefers a dark interface'))
         : console.log('User prefers a light interface');
       var G = Object(E.d)({
@@ -456,12 +502,19 @@
             return {
               getHistory: e.query({
                 query: function () {
-                  return { url: 'history', headers: { authorization: 'asdasdasd' } };
+                  return {
+                    url: 'history',
+                    headers: { authorization: 'asdasdasd' },
+                  };
                 },
               }),
               getDayById: e.mutation({
                 query: function (e) {
-                  return { url: 'history/'.concat(e.id), method: 'GET', headers: { authorization: 'asdasdasd' } };
+                  return {
+                    url: 'history/'.concat(e.id),
+                    method: 'GET',
+                    headers: { authorization: 'asdasdasd' },
+                  };
                 },
               }),
             };
@@ -486,7 +539,11 @@
         R = K.authLogin,
         Q = K.authLogout,
         X = Object(E.a)({
-          reducer: Object(W.a)({ darkMode: G.reducer, authentication: J.reducer }, A.reducerPath, A.reducer),
+          reducer: Object(W.a)(
+            { darkMode: G.reducer, authentication: J.reducer },
+            A.reducerPath,
+            A.reducer
+          ),
         }),
         $ = a(1),
         ee = function () {
@@ -499,50 +556,78 @@
             children: [
               Object($.jsx)('div', {
                 className: e
-                  ? ''.concat(u.a.LinkWrapper, ' ').concat(u.a['is-dark-LinkWrapper'])
+                  ? ''
+                      .concat(u.a.LinkWrapper, ' ')
+                      .concat(u.a['is-dark-LinkWrapper'])
                   : ''.concat(u.a.LinkWrapper),
                 children: Object($.jsxs)(j.c, {
-                  className: e ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink']) : ''.concat(u.a.NavLink),
+                  className: e
+                    ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink'])
+                    : ''.concat(u.a.NavLink),
                   activeClassName: e ? u.a['is-active-dark'] : u.a['is-active'],
                   to: '/store',
-                  children: [Object($.jsx)(x, {}), Object($.jsx)('span', { children: 'Store' })],
+                  children: [
+                    Object($.jsx)(x, {}),
+                    Object($.jsx)('span', { children: 'Store' }),
+                  ],
                 }),
               }),
               Object($.jsx)('div', {
                 className: e
-                  ? ''.concat(u.a.LinkWrapper, ' ').concat(u.a['is-dark-LinkWrapper'])
+                  ? ''
+                      .concat(u.a.LinkWrapper, ' ')
+                      .concat(u.a['is-dark-LinkWrapper'])
                   : ''.concat(u.a.LinkWrapper),
                 children: Object($.jsxs)(j.c, {
-                  className: e ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink']) : ''.concat(u.a.NavLink),
+                  className: e
+                    ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink'])
+                    : ''.concat(u.a.NavLink),
                   activeClassName: e ? u.a['is-active-dark'] : u.a['is-active'],
                   to: '/history',
-                  children: [Object($.jsx)(m, {}), Object($.jsx)('span', { children: 'History' })],
+                  children: [
+                    Object($.jsx)(m, {}),
+                    Object($.jsx)('span', { children: 'History' }),
+                  ],
                 }),
               }),
               Object($.jsx)('div', {
                 className: e
-                  ? ''.concat(u.a.LinkWrapper, ' ').concat(u.a['is-dark-LinkWrapper'])
+                  ? ''
+                      .concat(u.a.LinkWrapper, ' ')
+                      .concat(u.a['is-dark-LinkWrapper'])
                   : ''.concat(u.a.LinkWrapper),
                 children: Object($.jsxs)(j.c, {
-                  className: e ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink']) : ''.concat(u.a.NavLink),
+                  className: e
+                    ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink'])
+                    : ''.concat(u.a.NavLink),
                   activeClassName: e ? u.a['is-active-dark'] : u.a['is-active'],
                   to: '/settings',
-                  children: [Object($.jsx)(M, {}), Object($.jsx)('span', { children: 'Settings' })],
+                  children: [
+                    Object($.jsx)(M, {}),
+                    Object($.jsx)('span', { children: 'Settings' }),
+                  ],
                 }),
               }),
               Object($.jsx)('div', {
                 className: e
-                  ? ''.concat(u.a.LinkWrapper, ' ').concat(u.a['is-dark-LinkWrapper'])
+                  ? ''
+                      .concat(u.a.LinkWrapper, ' ')
+                      .concat(u.a['is-dark-LinkWrapper'])
                   : ''.concat(u.a.LinkWrapper),
                 children: Object($.jsxs)(j.c, {
                   onClick: function () {
                     t(Q());
                   },
-                  className: e ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink']) : ''.concat(u.a.NavLink),
+                  className: e
+                    ? ''.concat(u.a.NavLink, ' ').concat(u.a['is-dark-NavLink'])
+                    : ''.concat(u.a.NavLink),
                   activeClassName: e ? u.a['is-active-dark'] : u.a['is-active'],
                   exact: !0,
                   to: '/',
-                  children: [Object($.jsx)(V, {}), Object($.jsx)('span', { children: 'Logout' })],
+                  children: [
+                    Object($.jsx)(V, {}),
+                    Object($.jsx)('span', { children: 'Logout' }),
+                  ],
                 }),
               }),
             ],
@@ -572,7 +657,10 @@
               filterUnits: 'userSpaceOnUse',
               colorInterpolationFilters: 'sRGB',
               children: [
-                Object($.jsx)('feFlood', { floodOpacity: '0', result: 'BackgroundImageFix' }),
+                Object($.jsx)('feFlood', {
+                  floodOpacity: '0',
+                  result: 'BackgroundImageFix',
+                }),
                 Object($.jsx)('feBlend', {
                   mode: 'normal',
                   in: 'SourceGraphic',
@@ -587,17 +675,28 @@
                 }),
                 Object($.jsx)('feOffset', { dy: '2' }),
                 Object($.jsx)('feGaussianBlur', { stdDeviation: '2' }),
-                Object($.jsx)('feComposite', { in2: 'hardAlpha', operator: 'arithmetic', k2: '-1', k3: '1' }),
+                Object($.jsx)('feComposite', {
+                  in2: 'hardAlpha',
+                  operator: 'arithmetic',
+                  k2: '-1',
+                  k3: '1',
+                }),
                 t
                   ? Object($.jsx)('feColorMatrix', {
                       type: 'matrix',
-                      values: '0 0 0 0 0.229167 0 0 0 0 0.229167 0 0 0 0 0.229167 0 0 0 0.7 0',
+                      values:
+                        '0 0 0 0 0.229167 0 0 0 0 0.229167 0 0 0 0 0.229167 0 0 0 0.7 0',
                     })
                   : Object($.jsx)('feColorMatrix', {
                       type: 'matrix',
-                      values: '0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0.7 0',
+                      values:
+                        '0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0.7 0',
                     }),
-                Object($.jsx)('feBlend', { mode: 'normal', in2: 'shape', result: 'effect1_innerShadow' }),
+                Object($.jsx)('feBlend', {
+                  mode: 'normal',
+                  in2: 'shape',
+                  result: 'effect1_innerShadow',
+                }),
               ],
             }),
           });
@@ -607,13 +706,18 @@
             return e.darkMode;
           });
           return Object($.jsxs)('svg', {
-            className: e ? ''.concat(ce.a.LogoSVG, ' ').concat(ce.a['is-dark']) : ''.concat(ce.a.LogoSVG),
+            className: e
+              ? ''.concat(ce.a.LogoSVG, ' ').concat(ce.a['is-dark'])
+              : ''.concat(ce.a.LogoSVG),
             width: '215',
             height: '34',
             viewBox: '0 0 215 34',
             fill: 'none',
             xmlns: 'http://www.w3.org/2000/svg',
-            children: [Object($.jsx)(ie, {}), Object($.jsx)(re, { darkMode: e })],
+            children: [
+              Object($.jsx)(ie, {}),
+              Object($.jsx)(re, { darkMode: e }),
+            ],
           });
         },
         oe = function () {
@@ -621,7 +725,9 @@
             return e.darkMode;
           });
           return Object($.jsx)('header', {
-            className: e ? ''.concat(ae.a.Header, ' ').concat(ae.a['is-dark']) : ''.concat(ae.a.Header),
+            className: e
+              ? ''.concat(ae.a.Header, ' ').concat(ae.a['is-dark'])
+              : ''.concat(ae.a.Header),
             children: Object($.jsx)(se, {}),
           });
         },
@@ -632,7 +738,9 @@
             return e.darkMode;
           });
           return Object($.jsx)('footer', {
-            className: e ? ''.concat(de.a.Footer, ' ').concat(de.a['is-dark']) : ''.concat(de.a.Footer),
+            className: e
+              ? ''.concat(de.a.Footer, ' ').concat(de.a['is-dark'])
+              : ''.concat(de.a.Footer),
             children: Object($.jsx)('h2', { children: 'Copyright Arctindev' }),
           });
         },
@@ -664,7 +772,10 @@
               : ''.concat(Ce.a.HistoryCalendarItem),
             children: Object($.jsxs)('div', {
               className: Ce.a.DateWrapper,
-              children: [Object($.jsx)('span', { children: fe(t.id) }), Object($.jsx)('span', { children: xe(t.id) })],
+              children: [
+                Object($.jsx)('span', { children: fe(t.id) }),
+                Object($.jsx)('span', { children: xe(t.id) }),
+              ],
             }),
           });
         },
@@ -688,10 +799,14 @@
             return e.darkMode;
           });
           return Object($.jsxs)('div', {
-            className: e ? ''.concat(be.a.HistorySidebar, ' ').concat(be.a['is-dark']) : ''.concat(be.a.HistorySidebar),
+            className: e
+              ? ''.concat(be.a.HistorySidebar, ' ').concat(be.a['is-dark'])
+              : ''.concat(be.a.HistorySidebar),
             children: [
               Object($.jsx)('h1', {
-                className: e ? ''.concat(be.a.HistoryTitle, ' ').concat(be.a['is-dark']) : ''.concat(be.a.HistoryTitle),
+                className: e
+                  ? ''.concat(be.a.HistoryTitle, ' ').concat(be.a['is-dark'])
+                  : ''.concat(be.a.HistoryTitle),
                 children: 'History',
               }),
               Object($.jsx)(Le, {}),
@@ -709,13 +824,17 @@
             className: ke.a.Navigation,
             children: [
               Object($.jsx)(j.c, {
-                className: e ? ''.concat(ke.a.NavLink, ' ').concat(ke.a['is-dark']) : ''.concat(ke.a.NavLink),
+                className: e
+                  ? ''.concat(ke.a.NavLink, ' ').concat(ke.a['is-dark'])
+                  : ''.concat(ke.a.NavLink),
                 exact: !0,
                 to: '/store',
                 children: 'Store',
               }),
               Object($.jsx)(j.c, {
-                className: e ? ''.concat(ke.a.NavLink, ' ').concat(ke.a['is-dark']) : ''.concat(ke.a.NavLink),
+                className: e
+                  ? ''.concat(ke.a.NavLink, ' ').concat(ke.a['is-dark'])
+                  : ''.concat(ke.a.NavLink),
                 exact: !0,
                 to: '/settings',
                 children: 'Settings',
@@ -724,7 +843,9 @@
                 onClick: function () {
                   t(Q());
                 },
-                className: e ? ''.concat(ke.a.NavLink, ' ').concat(ke.a['is-dark']) : ''.concat(ke.a.NavLink),
+                className: e
+                  ? ''.concat(ke.a.NavLink, ' ').concat(ke.a['is-dark'])
+                  : ''.concat(ke.a.NavLink),
                 exact: !0,
                 to: '/',
                 children: 'Logout',
@@ -738,7 +859,9 @@
               return e.darkMode;
             });
           return Object($.jsxs)('div', {
-            className: a ? ''.concat(l.a.Template, ' ').concat(l.a['is-dark']) : ''.concat(l.a.Template),
+            className: a
+              ? ''.concat(l.a.Template, ' ').concat(l.a['is-dark'])
+              : ''.concat(l.a.Template),
             children: [
               Object($.jsx)(oe, {}),
               Object($.jsx)(Se, {}),
@@ -760,7 +883,9 @@
               return e.darkMode;
             });
           return Object($.jsx)('h1', {
-            className: a ? ''.concat(Pe.a.Title, ' ').concat(Pe.a['is-dark']) : ''.concat(Pe.a.Title),
+            className: a
+              ? ''.concat(Pe.a.Title, ' ').concat(Pe.a['is-dark'])
+              : ''.concat(Pe.a.Title),
             children: t,
           });
         },
@@ -801,7 +926,10 @@
               ? Object($.jsx)(Ne.a, { to: '/store' })
               : Object($.jsxs)('div', {
                   className: We.a.Wrapper,
-                  children: [Object($.jsx)(Ie, { titleText: 'History' }), Object($.jsx)(Le, {})],
+                  children: [
+                    Object($.jsx)(Ie, { titleText: 'History' }),
+                    Object($.jsx)(Le, {}),
+                  ],
                 })
           );
         },
@@ -818,81 +946,113 @@
           return Object($.jsxs)('ul', {
             children: [
               Object($.jsxs)('li', {
-                className: e ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark']) : ''.concat(Ae.a.ListItem),
+                className: e
+                  ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark'])
+                  : ''.concat(Ae.a.ListItem),
                 children: [
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListNameSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListNameSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListNameSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListHourandServiceSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListHourandServiceSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListHourandServiceSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListButtonSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListButtonSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListButtonSuspence),
                   }),
                 ],
               }),
               Object($.jsxs)('li', {
-                className: e ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark']) : ''.concat(Ae.a.ListItem),
+                className: e
+                  ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark'])
+                  : ''.concat(Ae.a.ListItem),
                 children: [
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListNameSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListNameSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListNameSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListHourandServiceSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListHourandServiceSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListHourandServiceSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListButtonSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListButtonSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListButtonSuspence),
                   }),
                 ],
               }),
               Object($.jsxs)('li', {
-                className: e ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark']) : ''.concat(Ae.a.ListItem),
+                className: e
+                  ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark'])
+                  : ''.concat(Ae.a.ListItem),
                 children: [
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListNameSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListNameSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListNameSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListHourandServiceSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListHourandServiceSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListHourandServiceSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListButtonSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListButtonSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListButtonSuspence),
                   }),
                 ],
               }),
               Object($.jsxs)('li', {
-                className: e ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark']) : ''.concat(Ae.a.ListItem),
+                className: e
+                  ? ''.concat(Ae.a.ListItem, ' ').concat(Ae.a['is-dark'])
+                  : ''.concat(Ae.a.ListItem),
                 children: [
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListNameSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListNameSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListNameSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListHourandServiceSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListHourandServiceSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListHourandServiceSuspence),
                   }),
                   Object($.jsx)('div', {
                     className: e
-                      ? ''.concat(Ae.a.ListButtonSuspence, ' ').concat(Ae.a['is-dark'])
+                      ? ''
+                          .concat(Ae.a.ListButtonSuspence, ' ')
+                          .concat(Ae.a['is-dark'])
                       : ''.concat(Ae.a.ListButtonSuspence),
                   }),
                 ],
@@ -943,7 +1103,10 @@
                 className: Ge.a.PageTitle,
                 children: [
                   Object($.jsx)(Ie, { titleText: 'Booking' }),
-                  Object($.jsx)(Fe.a, { classConfig: 'isBookingDate', labelText: '22 / 07' }),
+                  Object($.jsx)(Fe.a, {
+                    classConfig: 'isBookingDate',
+                    labelText: '22 / 07',
+                  }),
                 ],
               }),
               Object($.jsx)(Ke, {}),
@@ -963,7 +1126,10 @@
               className: Xe.a.SettingsMenu,
               children: [
                 Object($.jsx)(Ie, { titleText: 'Settings' }),
-                Object($.jsx)(Fe.a, { classConfig: 'isSettingsMenu', labelText: 'Change account details' }),
+                Object($.jsx)(Fe.a, {
+                  classConfig: 'isSettingsMenu',
+                  labelText: 'Change account details',
+                }),
                 Object($.jsx)('button', {
                   className: Xe.a.SettingsButton,
                   onClick: function () {
@@ -971,7 +1137,9 @@
                   },
                   children: Object($.jsx)(Fe.a, {
                     classConfig: 'isSettingsMenu',
-                    labelText: e ? 'Switch to light theme' : 'Switch to dark theme',
+                    labelText: e
+                      ? 'Switch to light theme'
+                      : 'Switch to dark theme',
                   }),
                 }),
               ],
@@ -989,7 +1157,10 @@
                 className: tt.a.PageTitle,
                 children: [
                   Object($.jsx)(Ie, { titleText: 'History' }),
-                  Object($.jsx)(Fe.a, { classConfig: 'isBookingDate', labelText: Oe(e) }),
+                  Object($.jsx)(Fe.a, {
+                    classConfig: 'isBookingDate',
+                    labelText: Oe(e),
+                  }),
                 ],
               }),
               Object($.jsx)(Ke, { id: e }),
@@ -999,17 +1170,40 @@
         nt = function () {
           return Object($.jsxs)(Ne.d, {
             children: [
-              Object($.jsx)(Ne.b, { path: '/history/:id', children: Object($.jsx)(at, {}) }),
-              Object($.jsx)(Ne.b, { exact: !0, path: '/store', children: Object($.jsx)(Re, {}) }),
-              Object($.jsx)(Ne.b, { exact: !0, path: '/history', children: Object($.jsx)(Ee, {}) }),
-              Object($.jsx)(Ne.b, { exact: !0, path: '/settings', children: Object($.jsx)($e, {}) }),
-              Object($.jsx)(Ne.b, { exact: !0, path: '/404', children: Object($.jsx)(Te, {}) }),
-              Object($.jsx)(Ne.b, { children: Object($.jsx)(Ne.a, { to: '/404' }) }),
+              Object($.jsx)(Ne.b, {
+                path: '/history/:id',
+                children: Object($.jsx)(at, {}),
+              }),
+              Object($.jsx)(Ne.b, {
+                exact: !0,
+                path: '/store',
+                children: Object($.jsx)(Re, {}),
+              }),
+              Object($.jsx)(Ne.b, {
+                exact: !0,
+                path: '/history',
+                children: Object($.jsx)(Ee, {}),
+              }),
+              Object($.jsx)(Ne.b, {
+                exact: !0,
+                path: '/settings',
+                children: Object($.jsx)($e, {}),
+              }),
+              Object($.jsx)(Ne.b, {
+                exact: !0,
+                path: '/404',
+                children: Object($.jsx)(Te, {}),
+              }),
+              Object($.jsx)(Ne.b, {
+                children: Object($.jsx)(Ne.a, { to: '/404' }),
+              }),
             ],
           });
         },
         ct = function () {
-          return Object($.jsx)(j.a, { children: Object($.jsx)(ye, { children: Object($.jsx)(nt, {}) }) });
+          return Object($.jsx)(j.a, {
+            children: Object($.jsx)(ye, { children: Object($.jsx)(nt, {}) }),
+          });
         },
         it = function () {
           var e = Object(B.d)();
@@ -1041,7 +1235,9 @@
           return Object($.jsx)(B.a, { store: X, children: t });
         };
       s.a.render(
-        Object($.jsx)(i.a.StrictMode, { children: Object($.jsx)(ot, { children: Object($.jsx)(st, {}) }) }),
+        Object($.jsx)(i.a.StrictMode, {
+          children: Object($.jsx)(ot, { children: Object($.jsx)(st, {}) }),
+        }),
         document.getElementById('root')
       );
     },

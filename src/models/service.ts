@@ -1,23 +1,22 @@
 import * as mongoose from 'mongoose';
 
-const UserSchema = new mongoose.Schema({
+const ServiceSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
   },
-  email: {
+  surname: {
     type: String,
     required: true,
   },
-  password: {
+  service: {
     type: String,
     required: true,
   },
-  token: {
+  hour: {
     type: String,
+    required: true,
   },
-  creation_date: { type: Date, default: Date.now },
-  data: [],
 });
 
-export const User = mongoose.model('User', UserSchema);
+export const Service = mongoose.model('Service', ServiceSchema);

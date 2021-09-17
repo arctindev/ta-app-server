@@ -4,6 +4,7 @@ import * as mongoose from 'mongoose';
 import 'dotenv/config';
 import { userDataRouter } from './src/routes/user-data';
 import { authenticationRouter } from './src/routes/authentication';
+import { createUserRouter } from './src/routes/create-user';
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(express.static('build'));
 app.use(cors());
 app.use('/user-data', userDataRouter);
 app.use('/authentication', authenticationRouter);
+app.use('/create-user', createUserRouter);
 
 app.get('/*', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');

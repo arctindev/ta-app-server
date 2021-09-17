@@ -1,8 +1,9 @@
 import { historyData } from './history';
+import { v4 as uuidv4 } from 'uuid';
 
 export const userData = [
   {
-    id: 1,
+    id: uuidv4(),
     token: 'asdasdasd',
     name: 'lukas',
     login: 'arctin',
@@ -11,7 +12,7 @@ export const userData = [
     data: historyData,
   },
   {
-    id: 1,
+    id: uuidv4(),
     login: 'test',
     token: 'testtokenmanhehe',
     name: 'test',

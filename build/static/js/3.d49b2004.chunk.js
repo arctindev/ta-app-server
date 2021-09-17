@@ -24,11 +24,19 @@
         return Object(o.jsxs)('li', {
           className: a.a.ListItem,
           children: [
-            Object(o.jsx)(i.a, { classConfig: 'ListElipsedName', labelText: t.name }),
+            Object(o.jsx)(i.a, {
+              classConfig: 'ListElipsedName',
+              labelText: t.name,
+            }),
             Object(o.jsx)(i.a, { classConfig: 'ListHour', labelText: t.hour }),
-            Object(o.jsx)(i.a, { classConfig: 'ListElipsedLabel', labelText: t.service }),
+            Object(o.jsx)(i.a, {
+              classConfig: 'ListElipsedLabel',
+              labelText: t.service,
+            }),
             Object(o.jsx)('button', {
-              className: e ? ''.concat(a.a.ListButton, ' ').concat(a.a['is-dark']) : ''.concat(a.a.ListButton),
+              className: e
+                ? ''.concat(a.a.ListButton, ' ').concat(a.a['is-dark'])
+                : ''.concat(a.a.ListButton),
               children: 'Check',
             }),
           ],

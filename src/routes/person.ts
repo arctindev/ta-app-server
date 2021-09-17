@@ -6,19 +6,19 @@ const router = express.Router();
 router.use(express.json());
 
 router.get('/:id', (req, res) => {
-    Person.findById(req.params.id)
-      .then((data) => {
-        res.status(200).json({
-          data: data,
-        });
-      })
-      .catch((err) => {
-        console.log('DB ERROR! ', err);
-        res.status(404).json({
-          message: "Couldn't find a data",
-        });
+  Person.findById(req.params.id)
+    .then((data) => {
+      res.status(200).json({
+        data: data,
       });
-  });
+    })
+    .catch((err) => {
+      console.log('DB ERROR! ', err);
+      res.status(404).json({
+        message: "Couldn't find a data",
+      });
+    });
+});
 
 router.get('/', (req, res) => {
   Person.find()

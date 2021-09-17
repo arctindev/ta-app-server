@@ -6,7 +6,7 @@ const router = express.Router();
 router.use(express.json());
 
 router.get('/history/', (req, res) => {
-  const user = userData.filter(item => item.token === req.headers.authorization)
+  const user = userData.filter((item) => item.token === req.headers.authorization);
   const data = user[0];
   res.status(200).json({
     data: data.data,
@@ -14,8 +14,8 @@ router.get('/history/', (req, res) => {
 });
 
 router.get('/history/:id', (req, res) => {
-  const user = userData.filter(item => item.token === req.headers.authorization)
-  const data = user[0].data.filter(item => item.id === req.params.id)
+  const user = userData.filter((item) => item.token === req.headers.authorization);
+  const data = user[0].data.filter((item) => item.id === req.params.id);
   res.status(200).json({
     data: data,
   });

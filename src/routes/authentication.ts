@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { userData } from '../data/userData';
+import { User } from '../models/user';
 import { v4 as uuidv4 } from 'uuid';
 
 const router = express.Router();
@@ -7,24 +7,42 @@ const router = express.Router();
 router.use(express.json());
 
 router.post('/login/', (req, res) => {
-  const userLogin = userData.filter((item) => item.login === req.body.login);
-  if (!userLogin[0]) {
-    return res.status(401).json({
-      message: 'Bad User Data',
-    });
-  }
+  User.findOne({ email: req.body.login })
+    .then((data: any) => {
+      if (data.password === req.body.pass) {
+        console.log('Login Success');
+        const token = uuidv4();
+        User.updateOne(
+          {
+            _id: data._id,
+          },
+          { token: token }
+        )
+          .then((data) => {
+            console.log('Succesfuly changed token', data);
+          })
+          .catch((err) => {
+            console.log('Something went wrong, couldnt add user token', err);
+          });
 
-  if (userLogin[0].password === req.body.pass) {
-    userLogin[0].token = uuidv4();
-    return res.status(200).json({
-      message: 'Success',
-      token: userLogin[0].token,
+        return res.status(200).json({
+          message: 'Success',
+          token: token,
+          me: data._id,
+        });
+      } else {
+        console.log('Login Failed, bad password');
+        return res.status(401).json({
+          message: 'Invalid user data',
+        });
+      }
+    })
+    .catch((err) => {
+      console.log('Login Failed', err);
+      return res.status(401).json({
+        message: 'Invalid user data',
+      });
     });
-  } else {
-    return res.status(401).json({
-      message: 'Bad User Data',
-    });
-  }
 });
 
 router.get('/*', (req, res) => {

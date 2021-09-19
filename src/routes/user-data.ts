@@ -46,7 +46,7 @@ router.post('/add-service/', (req, res) => {
           { $push: { 'data.$.data': service } }
         )
           .then((data) => {
-            console.log('Service Data succesfully pushed to DB :)', data);
+            console.log('Service data succesfully pushed to DB :)', data);
             return res.status(200).json({
               message: 'Successfully added service to Db',
             });

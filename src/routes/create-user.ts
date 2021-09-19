@@ -12,13 +12,13 @@ router.post('/', (req, res) => {
     password: req.body.password,
     token: '',
   });
-
+  console.log(user)
   user
     .save()
     .then((data) => {
+      console.log("Successfully created user");
       res.status(200).json({
-        message: 'Creating person',
-        person: data,
+        message: 'User created',
       });
     })
     .catch((err) => {

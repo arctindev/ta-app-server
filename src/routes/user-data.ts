@@ -105,9 +105,9 @@ router.post('/add-service/', (req, res) => {
 router.get('/history/', (req, res) => {
   User.findOne({ _id: req.headers.userid, token: req.headers.authorization })
     .then((data: any) => {
-      res.status(200).json({
-        data: data.data,
-      });
+        res.status(200).json({
+          data: data.data,
+        });
     })
     .catch((err) => {
       console.log('Something went wrong with getting user history data', err);
